@@ -1,8 +1,8 @@
 const express = require("express");
 const mock = require("./src/mockData/navigation");
-const app = express();
 const cors = require("cors");
-const PORT = process.env.PORT || 5000;
+const app = express();
+const PORT = process.env.PORT;
 
 var whitelist = [
   "https://wayfair-transportation-fe-53a645.netlify.app/",
@@ -27,6 +27,7 @@ app.get("/", (req, res) => {
 app.get("/nav-menus", (req, res) => {
   res.send(mock);
 });
-app.listen(PORT, () => {
-  console.log("app Start");
+
+app.listen(process.env.PORT, () => {
+  console.log(`app Starts: ${process.env.PORT}`);
 });
