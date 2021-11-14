@@ -1,5 +1,5 @@
 const express = require("express");
-const mock = require("./src/mockData/navigation");
+const mock = require("./mockData/navigation");
 const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT;

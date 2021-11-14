@@ -1,4 +1,4 @@
-const NavigationData: any = [
+const NavigationData = [
   {
     title: "Reporting",
     url: "/reporting",
