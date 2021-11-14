@@ -1,5 +1,5 @@
 const express = require("express");
-const mock = require("./mockData/navigation");
+const NavigationData = require("./mockData/navigation");
 const cors = require("cors");
 const app = express();
 const PORT = process.env.PORT;
@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
   res.send("Welcome to node app");
 });
 app.get("/nav-menus", (req, res) => {
-  res.send(mock);
+  res.send(NavigationData);
 });
 
 app.listen(process.env.PORT, () => {

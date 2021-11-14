@@ -1,3 +1,33 @@
+// const NavigationData = [
+//   {
+//     title: 'Reporting',
+//     url: null,
+//     id: 'menu-reporting',
+//     icon: 'reporting',
+//     hasAlert: false,
+//     children: [
+//       {
+//         title: 'Sales Dashboard',
+//         url: '/v/sales_dashboard/index',
+//         id: 'menu-sales-dashboard',
+//         icon: null,
+//         hasAlert: false,
+//         children: []
+//       }
+//     ]
+//   },
+//   {
+//     title: 'Category',
+//     url: '/v/category',
+//     id: 'menu-category',
+//     icon: null,
+//     hasAlert: false,
+//     children: []
+//   }
+// ];
+
+// module.exports = NavigationData;
+
 const NavigationData = [
   {
     title: "Reporting",
@@ -541,5 +571,4 @@ const NavigationData = [
   },
 ];
 
-export { NavigationData };
-// module.exports = NavigationData;
+module.exports = NavigationData;
