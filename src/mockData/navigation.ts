@@ -1,4 +1,4 @@
-const NavigationData = [
+const NavigationData: any = [
   {
     title: "Reporting",
     url: "/reporting",
@@ -541,4 +541,5 @@ const NavigationData = [
   },
 ];
 
-module.exports = NavigationData;
+export { NavigationData };
+// module.exports = NavigationData;
